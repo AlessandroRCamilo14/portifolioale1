@@ -1,0 +1,535 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* ESTILO MENU SUPERIOR */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 1;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 10px;
+    margin-right: 160px;
+}
+
+li {
+    display: inline-block;
+    padding: 0 20px;
+    margin-left: 50px;
+}
+
+a {
+    color: #00FF08;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: orangered;
+    transition: 0.4s;
+}
+
+.btnzap button {
+    color: aliceblue;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: rgba(184, 233, 134, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.btnzap button:hover {
+    transition: 0.5s;
+    background: rgba(208, 2, 27, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ESTILO PAGINA INICIO */
+.caixa-video-matrix video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 300px;
+}
+
+.home-content {
+    position: relative;
+    z-index: 0;
+    margin-top: 380px;
+    margin-left: 40px;
+    margin-right: 360px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.home-content .text-1 {
+    color: #00FF08;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.home-content .text-2 {
+    color: #00FF08;
+    font-size: 70px;
+    margin-left: 10px;
+}
+
+.home-content .text-3 {
+    color: orangered;
+    font-size: 50px;
+    margin-left: 10px;
+
+}
+
+/* ESTILO PAGINA SOBRE */
+.sobre {
+    background: url(./img/IA1.jpg) no-repeat;
+    margin-top: 10px;
+    height: 700px;
+    z-index: -1;
+}
+
+.sobre .title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #00FF08;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.sobre .container .colunesq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .container .colunesq img {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 390px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.sobre .container .colundir h3 {
+    padding: 15px;
+    color: #00FF08;
+    font-size: 30px;
+}
+
+.sobre .container .colundir p {
+    max-width: 550px;
+    font-size: 15px;
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+.btncv button {
+    margin-top: 30px;
+    color: aliceblue;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: rgba(184, 233, 134, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.btncv button:hover {
+    transition: 0.5s;
+    background: rgba(208, 2, 27, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+/* ESTILO PAGINA ESPECIALIDADES */
+.especialidades {
+    background: url(./img/IA2.jpeg) no-repeat;
+    height: 600px;
+}
+
+.especialidades .title {
+    margin-bottom: 50px;
+    color: #00FF08;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.especialidades .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+
+}
+
+.especialidades .container .card {
+    margin-left: 50px;
+    width: 200px;
+    height: 280px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.especialidades .container .card img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.especialidades .container .card h3 {
+    display: flex;
+    justify-content: center;
+    color: #00FF08;
+    font-size: 24px;
+}
+
+.especialidades .container .card p {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+    color: aquamarine
+}
+
+/* ESTILO PAGINA PROJETOS */
+.projetos {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    height: 2000px;
+}
+
+.projetos .title {
+    margin-bottom: 50px;
+    color: #00FF08;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos .textap {
+    color: aquamarine;
+    margin: 10px;
+    font-size: 25px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.projetos .textap p {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.projetos .container {
+    margin: 10px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.projetos .container .line1 .card,
+.projetos .container .line2 .card,
+.projetos .container .line3 .card,
+.projetos .container .line4 .card,
+.projetos .container .line5 .card {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    width: 320px;
+    height: 290px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.projetos .container .line1 .card img,
+.projetos .container .line2 .card img,
+.projetos .container .line3 .card img,
+.projetos .container .line4 .card img,
+.projetos .container .line5 .card img {
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.projetos .container .line1 .card h3,
+.projetos .container .line2 .card h3,
+.projetos .container .line3 .card h3,
+.projetos .container .line4 .card h3,
+.projetos .container .line5 .card h3 {
+    color: #00FF08;
+    display: flex;
+    justify-content: center;
+}
+
+.projetos .container .line1 .card p,
+.projetos .container .line2 .card p,
+.projetos .container .line3 .card p,
+.projetos .container .line4 .card p,
+.projetos .container .line5 .card p {
+    display: flex;
+    justify-content: center;
+    color: aquamarine;
+}
+
+.projetos .container .line1 .card button,
+.projetos .container .line2 .card button,
+.projetos .container .line3 .card button,
+.projetos .container .line4 .card button,
+.projetos .container .line5 .card button {
+    margin-top: 6px;
+    margin-left: 25px;
+    padding: 5px;
+    border: none;
+    color: aliceblue;
+    background: rgba(184, 233, 134, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.projetos .container .line1 .card button:hover,
+.projetos .container .line2 .card button:hover,
+.projetos .container .line3 .card button:hover,
+.projetos .container .line4 .card button:hover,
+.projetos .container .line5 .card button:hover {
+    transition: 0.5s;
+    background: rgba(208, 2, 27, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Fim da Sessão Projetos*/
+.contato {
+    background: url(img/IA3.png);
+    height: 1000px;
+}
+
+.contato .title {
+    margin-bottom: 50px;
+    color: #00FF08;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .formulario {
+    margin: 100px auto;
+    width: 40%;
+    min-width: 350px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.contato .formulario h3 {
+    display: flex;
+    justify-content: center;
+    color: #00FF08;
+}
+
+.contato .formulario input {
+    display: block;
+    min-width: 320px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid rgba(4, 69, 142, 0.75);
+    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
+}
+
+.contato .formulario textarea {
+    display: block;
+    min-width: 320px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid rgba(4, 69, 142, 0.75);
+    margin-top: 20px;
+    height: 300px;
+    padding: 10px;
+}
+
+.contato .formulario button {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 180px;
+    color: aliceblue;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: rgba(184, 233, 134, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.contato .formulario button:hover {
+    transition: 0.5s;
+    background: rgba(208, 2, 27, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contato .redessociais {
+    margin: 20px auto;
+    width: 40%;
+    min-width: 350px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.contato .redessociais h3 {
+    display: flex;
+    justify-content: center;
+    color: #00FF08;
+}
+
+.contato .redessociais .rsocial {
+    display: inline-block;
+    padding: 18px;
+}
+
+footer {
+    color: #00FF08;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 15px;
+    background: rgba(4, 69, 142, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(31, 38, 135, 0.37);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(4, 69, 142, 0.75);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba( 20, 56, 98, 0.25 );
+}
